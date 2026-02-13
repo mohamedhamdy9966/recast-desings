@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Recast Designs Technical Task E-Commerce Section</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"></div>
+      <div class="header-actions">
+        <button id="cart-btn" aria-label="Open cart" class="cart-btn">
+          Cart <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="product-root"
+        class="product-section"
+        aria-label="Featured product"
+      ></section>
+
+      <section
+        id="collection-root"
+        class="collection-section"
+        aria-label="Ring collection"
+      >
+      </section>
+    </main>
+
+    <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-inner">
+        <header class="cart-drawer-header">
+          <h2>Your Cart</h2>
+          <button id="close-cart" aria-label="Close cart">✕</button>
+        </header>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-footer">
+          <div class="cart-total">
+            Total: <span id="cart-total">$0.00</span>
+          </div>
+          <button id="checkout" class="btn primary">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>
